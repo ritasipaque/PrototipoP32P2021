@@ -121,7 +121,7 @@ public class login extends javax.swing.JFrame {
                 this.dispose();
                 
                 MDIcontenedor frmMenu = new MDIcontenedor(mod);
-                frmMenu.setTitle("MDI Sistemas");
+                frmMenu.setTitle("RITA SIPAQUE 9959-19-3293");
                 frmMenu.setVisible(true);
                 
             } else {

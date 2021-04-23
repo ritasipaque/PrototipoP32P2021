@@ -7,16 +7,19 @@ package Login;
 
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
-//import vista.uno;
-
+import Vista.cliente;
+import Vista.video;
+import Vista.bono;
 /**
  *
  * @author SOPORTE
  */
 public class MDIcontenedor extends javax.swing.JFrame {
 //    private uno formModulos;
- 
-
+//  private cliente formModulos;
+  private cliente  Mantenimiento_Acreedor;
+private video Mantenimiento_Acreedor1;
+private bono Mantenimiento_Acreedor2;
     Usuarios mod;
 
     /**
@@ -42,15 +45,15 @@ public class MDIcontenedor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenu14 = new javax.swing.JMenu();
-        jMenu15 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu16 = new javax.swing.JMenu();
-        jMenu17 = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
         jMenu12 = new javax.swing.JMenu();
         jMenu13 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -63,6 +66,17 @@ public class MDIcontenedor extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 879, Short.MAX_VALUE)
+        );
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 525, Short.MAX_VALUE)
+        );
+
         jMenu3.setText("Archivo");
         jMenu3.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
 
@@ -74,34 +88,34 @@ public class MDIcontenedor extends javax.swing.JFrame {
         jMenu14.setText("Catalogos");
         jMenu14.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
 
-        jMenu15.setText("Historial");
+        jMenuItem1.setText("Mantenimiento Clientes");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu14.add(jMenuItem1);
 
-        jMenuItem3.setText("Bitacora Comercial");
+        jMenuItem3.setText("Mantenimineto Videos");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem3ActionPerformed(evt);
             }
         });
-        jMenu15.add(jMenuItem3);
-
-        jMenu14.add(jMenu15);
+        jMenu14.add(jMenuItem3);
 
         jMenuBar2.add(jMenu14);
 
         jMenu16.setText("Procesos");
         jMenu16.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
 
-        jMenu17.setText("Historial");
-
-        jMenuItem4.setText("Bitacora Comercial");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItem7.setText("Proceso de Bonos a los clientes");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                jMenuItem7ActionPerformed(evt);
             }
         });
-        jMenu17.add(jMenuItem4);
-
-        jMenu16.add(jMenu17);
+        jMenu16.add(jMenuItem7);
 
         jMenuBar2.add(jMenu16);
 
@@ -162,11 +176,13 @@ public class MDIcontenedor extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 879, Short.MAX_VALUE)
+            .addComponent(jDesktopPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 557, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 32, Short.MAX_VALUE))
         );
 
         pack();
@@ -178,14 +194,6 @@ public class MDIcontenedor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
-
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
-
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem5ActionPerformed
@@ -193,6 +201,27 @@ public class MDIcontenedor extends javax.swing.JFrame {
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem6ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        Mantenimiento_Acreedor= new cliente();
+        Mantenimiento_Acreedor.setVisible(true);
+          jDesktopPane1.add(Mantenimiento_Acreedor);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+        Mantenimiento_Acreedor1= new video();
+        Mantenimiento_Acreedor1.setVisible(true);
+          jDesktopPane1.add(Mantenimiento_Acreedor1);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+        // TODO add your handling code here:
+        Mantenimiento_Acreedor2= new bono();
+        Mantenimiento_Acreedor2.setVisible(true);
+          jDesktopPane1.add(Mantenimiento_Acreedor2);
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     /**
          * @param args the command line arguments
@@ -237,12 +266,11 @@ public class MDIcontenedor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
     private javax.swing.JMenu jMenu14;
-    private javax.swing.JMenu jMenu15;
     private javax.swing.JMenu jMenu16;
-    private javax.swing.JMenu jMenu17;
     private javax.swing.JMenu jMenu18;
     private javax.swing.JMenu jMenu19;
     private javax.swing.JMenu jMenu20;
@@ -250,10 +278,11 @@ public class MDIcontenedor extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
     // End of variables declaration//GEN-END:variables
 }
