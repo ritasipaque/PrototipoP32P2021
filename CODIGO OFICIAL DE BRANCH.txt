@@ -1,0 +1,168 @@
+ git branch = nos muestra las ramas que tenemos
+git checkout = para movernos entre ramas y ver lo commit
+git branch test = CREAR RAMAS 
+git add -A
+git commit -m "se agrago "                            ----prueba----
+git branch 
+git checkout master
+------Pasod desde cero------
+git init 
+git add -A
+git commit -m "subiendo archivo"
+git remote add origin https://github.com/ritasipaque/ritasipaque.git
+git push -u origin master
+git branch 
+git branch test
+git checkout test
+git add -A
+git commit -m "primer commit"
+git branch
+git checkout master
+git merge test
+
+ritamariapatricia
+
+
+
+
+1. abrir el proyecto clonado 
+git status
+git branch
+git branch test
+gti checkout test
+git status
+git add -A
+git commit -m "cambios"
+git push 
+git push origin master gi
+git checkout test
+git push origin test
+git 
+
+-------------------------
+git pull  origin test
+git init
+git remote add orignalpro link
+git pull originpro master
+git status
+git add -A
+git commit -m "cambios"
+git push origibalpro master
+----
+git branch test
+git branch
+git checkout test
+git status
+git add -A
+git commit -m "cambios"
+git pull originpro test
+git push originpro test
+----
+
+La estrucutura de datos som aquellas tipos que se cosnideran iiguales , pero se diferencia entre si , podemos operar cualquier tipo de datos , la estructura de datos se centra el poder desarrollar un conjunto determinado de elemntos conel objetivo de lograr manipular , dentro de las estrucutras de atos existen dos tipos las estaticos y los dinamicos , se dice que la diferencia entre cada uno de ellos es el manejo  de la memoria.
+
+
+
+
+La estructura de atos dinamicos es aquella que se caracteriza por que el tamaño podra modificarse durante la ejecucioin de un programa ,, de igaul manera no tiene una tamaño en especifico por que se considera que es ilimitado , solo que el normalmente tiene la memoria disponible.
+
+
+
+
+Las estructura de datos dinamocos se diveden en las siguientes:
+
+**Una Lista*
+
+**Cola**
+
+**Una pila
+
+**un arbol
+
+**un grafo
+
+
+
+
+Que a continnuacion definere lo datos de estructura dinamicos:
+
+
+
+
+La pila
+
+Una pila  tambien se le conoce como Stack , es aquella que se determina como una estructura de datos , porque como sabemos es almacena informacion y recupera datos , y su estructura es el LIFO ( es decir, ultima en  entrar , primera en salir ), la pila tambien cuenta con operaciones basicas como por ejemplo 
+
+Apilar (push)
+
+Retrirar(POP)
+
+Que definire a continuacion :
+
+****Apilar = esta operacion se encarga de ingresar datos de manera si establecemos el tamaño de la ipla en determinado timepo ya no nos dejra ingresar datos por ejemplo podemos ingresar 5 datos = (1,2,3,4,5,) el primero en entrar seria el 1 verdad y el ultimo en ingresar seria el 5.
+
+Retirar = Esta operacion consiste en como su nombre lo dice en retirar cada uno de los elementos como por ejemplo anterior de pila ya habiamos ingresado algunos datos , volveremos a utilizar el mismo ejemplo solo que como se habia ingresado 5 dato s(1,2,3,4,5) y el ultimo en entrar fuel el numero 5 , ahora esre sera el primero en salir de la pila es decir que los elementos saldran de la siguiente manera:5 , 4, 3,2,1
+
+Considero que la pila es una herramineot muy importante ya que nos ayuda a almacenar los dartos.
+
+
+
+
+
+
+
+***Cola :
+
+Una cola se considera un estructura de datis en la cual tiene como objetivo almecenar datos ordenados  y se encarga de borrar sus elementos de un extremo a otro (entrada y salida),  una cola trabaja con una estrucutura llamada FIFO(primero en entrar , primero en salir)  de igual manera la cola continee operaciones basicas las cuales definire
+
+Encolar: encolar es la operacion que se le conoce como insertar un elemento en la cola este entraa , podemos definir el tamaño de la cola por ejemplo 5  ingresaremos los siguientes datos  (6,7.8.9.,10) el cual se ordenara de la siguiente manera  6, 7, ,8 9,10 es decir que el primer dato en ingresar sera el 6.
+
+
+
+
+Desencolar = esta operacion consiste como su nombre lo indica sacar elementos , la cual lo hara de la siguiente manera : como en el ejmeplo anterior habiamos realizado en ingreso de datos en una cola se utilizara el mismo ya que el primeto en salir de la cola seria el numero 6.
+
+
+
+
+
+
+
+Los arboles :
+
+Como sabemos los arboles son escructuras de datos , se consideran no linelaos , que se utilizan como una herramienta para resolber problemas informaticos , los arboles se encargan de ayudarnos a organizar la informacion que nos ayudana tomar desiciones. Los arboles estan compuestos de nodos que ayudan a puntar a uno o varios nodos.
+
+Un arbol consis de un nodo que se denomina coom el nodo raiz.Los elementos para unir cada nodo es una linea la cual se le llama rama 
+
+El recorrido que desarrollan los arboles son los siguwintees
+
+1. primero se dirigen al Preorden , es decir que pasan por la raiz ( Nodo padre) .
+
+2. PostOrden = se recorre en cada uno de los subarboles en los que los divide el nodo padre por ejemplo el nodo padre seria A y lsus divisiones serian B y C
+
+3, Inorden = recorre en las divisiones de los nodos hijo s(B Y C ) y sus valores determinados es decir el nodo hijo C esta compuesto D,F,G (inorden)
+
+
+
+
+Grafo : 
+
+Los grafos se considerar una estrucutra de datos ya que se encarga de determinar relaciones arbitrarias entro los diferentes objetos un grafo esta compuesto de vertices o nodos y por un conjunto de arcos o aristas Los grafos estan compuestos de la siguente manera:
+
+Grafo Dirigido:
+
+Un grafo dirigido es aque consis de un determinado conjunto de vertices (V) y un conjunto de aristas por ejemplo
+
+V=(A,B,C,D) y el conjunto de de aristas = E = ((A,B)(A,C),(B.C)(b,d),(C,D)(C,A),(D,C),(B,B).
+
+No dirigido:
+
+El grafo no dirigido es aquel que donde G = (v,e) es decir que v corresponde al conjunto de vertices y el conjunto E a las aristas , la diferencia entre el grafo dirigido y el grafo no dirigido es que es las aristas son par no ordenado de vertices , es decir que son aristas no dirigidas.Por ejemplo V = (A,B,C,D) Y E =((A,C),(C,A)(A,B)(B,A)(C,B)(B,C)(D,C)(D,B).
+
+
+
+
+Estas estructuras de datos nos ayudan a poder aplicarlas en nuestro como futuros ingenieros, por ejemplo los arboles y grafos son herramientas utiles para ayudarnos a resolver un problema de programacion .
+
+
+ritamariapatricia
